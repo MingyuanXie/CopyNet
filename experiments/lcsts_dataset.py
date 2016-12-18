@@ -13,11 +13,12 @@ word2idx['<eol>'] = 0
 word2idx['<unk>'] = 1
 
 segment  = False # True
+filePath="F:/DATA"
 
 # training set
 pairs = []
 # f     = open('./dataset/LCSTS/PART_I/PART_full.txt', 'r')
-f = open('F:/DATA/PART_I.txt','r')
+f = open(filePath+'/PART_I.txt','r')
 
 line  = f.readline().strip()
 at    = 2
@@ -61,7 +62,7 @@ while line:
 # testing set
 tests = []
 # f     = open('./dataset/LCSTS/PART_II/PART_II.txt', 'r')
-f = open('F:/DATA/PART_II.txt','r')
+f = open(filePath+'/PART_II.txt','r')
 line  = f.readline().strip()
 lines = 0
 while line:
